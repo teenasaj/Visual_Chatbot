@@ -2,8 +2,15 @@
 
 An AllenNLP integrated Visual chatbot to classify tourist places in India.
 
-Here's a visual bot which can help you find more about the monuments of India.
+Data - Images of 40 famous monuments of India Training data - 10 images for each.
 
-Our Project is to build a visual chatbot which can classify 40 different places using Neural Networks and help you to get to know more about the place with the chatbot. In particular we have used the AlexNet.
+Validation data - 3 images for each.
 
-AlexNet is a Convolutional Neural Network that rose to prominence when it won the Imagenet Large Scale Visual Recognition Challenge (ILSVRC), which is an annual challenge that evaluates algorithms for object detection and image classification at large scale (think of it as the World cup for image classification algorithms).
+Images were web scraped from flickr. Text data for chatbot purpose was web scraped from wikipedia.
+
+In the app, the user can input the path of the monument image to be classified. Then the classifier built using AlexNet identifies and classifies the image.
+
+ 
+Once the classification is done the user interacts with the chatbot built using AllenNLP if the user wants to know more about the classified monument. The chatbot provides the output with audio.
+
+The app is built on Streamlit which provides the user with the options of an ABOUT page to know about HAL9000 Visual Chatbot and another option of Chatbot which includes the classifier.
